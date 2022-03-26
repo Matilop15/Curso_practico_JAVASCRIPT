@@ -1,2 +1,3 @@
-# Curso_practico_JAVASCRIPT
-Comenzando con el JavaScript :D
+# JavaScript_Practical_Course
+
+Getting starting with JavaScript :D
