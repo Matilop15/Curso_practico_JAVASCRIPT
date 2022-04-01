@@ -1,0 +1,164 @@
+  .Index-header {
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 10vh;
+  }
+
+  .Index-header.index img {
+    height: 45px;
+    width: auto;
+  }
+  .Taller a:hover {
+      color: black;
+      
+  }
+  .footer-master {
+    background-color: #8ffcaa;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 4px 20px;
+    align-items: center;
+    justify-content: center;
+}
+  .footer-master .footer-information ul{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    font-size: 20px;
+  }
+  
+  .footer-copyright {
+    font: 770 1rem/0.5rem Montserrat;
+  }
+  
+  @media (min-width: 1024px) {
+    .footer-master {
+      height: 10vh;
+    }
+  
+    .footer-information ul {
+      gap: 10px;
+    }
+  }
+  @media (max-width: 1024px) {
+    .footer-master {
+      padding: 20px;
+      justify-content: center;
+    }
+  
+    .footer-information ul {
+      gap: 5px;
+    }
+  }
+  .IndexTitle {
+    font: 700 2rem/2rem Lato;
+    text-align: center;
+    padding: 0 20px 20px 20px;
+  }
+  
+  .Taller {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    min-height: 150px;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+  }
+  .MyInfo ul {
+      justify-content: center;
+      list-style: none;
+      font: 700 1.5rem/1.6499999762rem Lato;
+  }
+  .Taller a {
+    background-color: rgb(128, 125, 167);
+    text-decoration: none;
+    border-radius: 3px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+  }
+  .Taller a h2 {
+    font: 700 1.5rem/1.6499999762rem Lato;
+  }
+  .Taller a p {
+    font: 400 1.125rem/1.6875rem Montserrat;
+  }
+  
+  .taller1 {
+    background-image: url("../Images/Task0.png");
+  }
+  
+  .taller2 {
+    background-image: url("../Images/Task1.png");
+  }
+  
+  .taller3 {
+    background-image: url("../Images/Task2.png");
+  }
+
+  
+  @media (max-width: 599px) {
+    .Indexgrid {
+      height: 60%;
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr, 1fr, 1fr, 1fr;
+    }
+    .Indexgrid .taller1 {
+      background-color: royalblue;
+    }
+    .Indexgrid .taller2 {
+      background-color: brown;
+    }
+    .Indexgrid .taller3 {
+      background-color: rgb(161, 107, 30);
+    }
+    .Indexgrid .MyInfo {
+        background-color: rgb(3, 104, 134);
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
+
+  }
+  @media (min-width: 600px) {
+    body {
+      height: 100vh;
+    }
+  
+    .Indexgrid {
+      height: 60%;
+      min-height: 500px;
+      display: grid;
+      grid-template-columns: 1fr, 1fr;
+      grid-template-rows: 1fr, 1fr;
+    }
+    .Indexgrid .taller1 {
+      background-color: royalblue;
+      grid-column: 1/2;
+      grid-row: 1/2;
+    }
+    .Indexgrid .taller2 {
+      background-color: brown;
+      grid-column: 2/3;
+      grid-row: 1/2;
+    }
+    .Indexgrid .taller3 {
+      background-color: rgb(161, 107, 30);
+      grid-column: 1/2;
+      grid-row: 2/3;
+    }
+    .Indexgrid .MyInfo {
+        background-color: rgb(3, 104, 134);
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
+  }
+  * {
+    margin: 0;
+    padding: 0;
+  }

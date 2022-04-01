@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="https://img.icons8.com/fluency/48/000000/diversity.png"/>
+    <title>Geometric Figures</title>
+    <link rel="stylesheet" href="../css/Figure.css">
+</head>
+<body>
+    <header class="header width--global">
+        <h1 class="header__title">Geometric Figures</h1>
+        <p class="header__text">Calculate the area, perimeter and diameter of different geometric figures using JavaScript</p>
+        <nav class="nav-options">
+            <ul>
+              <li><a href="../index.html">Home</a></li>
+              <li class="weAreHere"><a href="#">Task #0</a></li>
+              <li><a href="../HTML/Discounts.html">Task #1</a></li>
+              <li><a href="../HTML/Mediana.html">Task #2</a></li>
+            </ul>
+          </nav>
+    </header>
+    <main class="main width--global">
+        <section class="main__section">
+            <div class="section__card">
+                <h2 class="section__card--title">Square</h2>
+                <p class="section__card--text">Enter the length of one side of the square:</p>
+                <img class="section__card--img" src="https://img.icons8.com/emoji/48/000000/purple-square-emoji.png" alt="Square image">
+                <form class="section__card--form margin-top">
+                    <label>
+                        <span></span>
+                        <input type="number" placeholder="Side 4cm" id="SideC">
+                    </label>
+                    <label>
+                        <select name="medias" id="medidasC">
+                            <option value="Km">Kilometres</option>
+                            <option value="m">Meters</option>
+                            <option value="cm">Centimeters</option>
+                            <option value="mm">Milimeters</option>
+                        </select>
+                    </label>
+                </form>
+                <div class="section__card--botones">
+                    <button class="btn btn__peri" id="btnPc">Get Perimeter</button>
+                    <button class="btn btn__area btn__area--square" id="btnAc">Get Area</button>
+                </div>
+                <div class="section__card--salida">
+                    <p class="cuadro btn__result--square" id="salidaC">Result</p>
+                </div>
+            </div>
+        </section>
+        <section class="main__section main__section--background1">
+            <div class="section__card">
+                <h2 class="section__card--title">Triangle</h2>
+                <p class="section__card--text">Insert the sides and base of the Triangle:</p>
+                <img class="section__card--img" src="https://img.icons8.com/fluency/48/000000/triangle-stroked.png" alt="Triangle image">
+                <form class="section__card--form">
+                    <label>
+                        <input type="number" placeholder="Side1 3cm" id="Side1">
+                        <input type="number" placeholder="Side2 2cm" id="Side2">
+                        <input type="number" placeholder="Base 5cm" id="base">
+                    </label>
+                    <label>
+                        <select name="medias" id="medidasT">
+                            <option value="Km">Kilometres</option>
+                            <option value="m">Meters</option>
+                            <option value="cm">Centimeters</option>
+                            <option value="mm">Milimeters</option>
+                        </select>
+                    </label>
+                </form>
+                <div class="section__card--botones">
+                    <button class="btn btn--tri" id="btnPt">Get Perimeter</button>
+                    <button class="btn btn__area btn__area--tri" id="btnAt">Get Area</button>
+                    <button class="btn btn__height btn__height--tri" id="btnHt">Get Height</button>
+                </div>
+                <div class="section__card--salida">
+                    <p class="cuadro btn__result--tri" id="salidaT">Result</p>
+                </div>
+            </div>
+        </section>
+        <section class="main__section main__section--background2">
+            <div class="section__card">
+                <h2 class="section__card--title">Circle</h2>
+                <p class="section__card--text">Insert the radius of the circle:</p>
+                <img class="section__card--img" src="https://img.icons8.com/nolan/64/circled.png" alt="Circle image">
+                <form class="section__card--form margin-top">
+                    <label>
+                        <input type="number" placeholder="Radius 6m" id="radius">
+                    </label>
+                    <label>
+                        <select name="medias" id="medidasR">
+                            <option value="Km">Kilometres</option>
+                            <option value="m">Meters</option>
+                            <option value="cm">Centimeters</option>
+                            <option value="mm">Milimeters</option>
+                        </select>
+                    </label>
+                </form>
+                <div class="section__card--botones">
+                    <button class="btn btn--cir" id="btnPr">Get Perimeter</button>
+                    <button class="btn btn__area btn__area--cir" id="btnAr">Get Area</button>
+                </div>
+                <div class="section__card--salida">
+                    <p class="cuadro btn__result--cir" id="salidaR">Result</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer-master">
+        <div class="footer-information index">
+            <ul>
+                <p class="footer-copyright">©2022 Matias López</p>
+            </ul>
+        </div>
+    </footer>
+    <script src="../JavaScript/Figure.js"></script>
+</body>
+</html>

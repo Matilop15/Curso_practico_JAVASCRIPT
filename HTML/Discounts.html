@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="https://img.icons8.com/fluency/48/000000/discount.png"/>
+    <title>Discounts</title>
+    <link rel="stylesheet" href="../css/Discount.css">
+</head>
+<body>
+    <header class="header">
+        <h1 class="header__title">Discount</h1>
+        <nav class="nav-options">
+            <ul>
+              <li><a href="../index.html">Home</a></li>
+              <li><a href="../HTML/Figures.html">Task #0</a></li>
+              <li class="weAreHere"><a href="#">Task #1</a></li>
+              <li><a href="../HTML/Mediana.html">Task #2</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="main">
+        <p class="main__texto">Calculate the discount on the product</p>
+        <section class="section">
+            <div class="section__container">
+                <img class="section__img" src="https://img.icons8.com/pastel-glyph/64/000000/shopping-trolley--v1.png" alt="shopping trolley">
+            </div>
+            <form class="section__form">
+                <span>Insert the price</span>
+                <label class="label1">
+                    <input type="number" min="1" id="price">
+                    <select id="value">
+                        <option value="$">Pesos Uruguayos</option>
+                        <option value="USD$">Dollars</option>
+                    </select>
+                </label>
+                <label class="label2">
+                    <span>Insert the discount</span>
+                    <input class="input" type="number"  min="1" id="discount">
+                </label>
+            </form>
+            <div class="fana">
+                <button class="btn" id="btn">Calculate</button>
+                <p class="salida" id="salida"></p>
+            </div>
+        </section>
+    </main>
+    <footer class="footer-master">
+        <div class="footer-information index">
+            <ul>
+                <p class="footer-copyright">©2022 Matias López</p>
+            </ul>
+        </div>
+    </footer>
+    <script src="../JavaScript/Discount.js"></script>
+</body>
+</html>

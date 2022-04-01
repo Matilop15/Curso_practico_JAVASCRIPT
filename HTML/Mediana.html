@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="https://img.icons8.com/color/48/000000/ruler.png">
+    <title>Calculate mean, median and average</title>
+    <link rel="stylesheet" href="../css/Mediana.css">
+</head>
+<body>
+    <header class="header">
+        <h1 class="header__title">Calculate mean, median and average</h1>
+        <nav class="nav-options">
+            <ul>
+              <li><a href="../index.html">Home</a></li>
+              <li><a href="../HTML/Figures.html">Task #0</a></li>
+              <li><a href="../HTML/Discounts.html">Task #1</a></li>
+              <li  class="weAreHere"><a href="#">Task #2</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="main">
+        <div class="caruosel">
+            <div class="card">
+                <h2 class="card__title">Average</h2>
+                <p class="card__subtitle">Enter the values to calculate the Average:</p>
+                <form class="card__form" action="javascript:void(0);" id="form1">
+                    <label class="card__form-label">
+                        <input class="input" type="number" id="area1">  
+                        <button class="btn" title="Enter Number" type="button" id="btnI1" data-input="area1"  data-btn="btn1" data-salida="salida11"></button><button class="btn back2" title="Delete last number" type="button" id="btnB1" data-salida="salida11"></button>
+                    </label>
+                    <span>Numeros Ingresados:</span>
+                    <p class="card__salida salida--height" id="salida11"></p>
+                    <div class="botones">
+                        <button class="card__form-btn" id="btn1" type="button" onclick="calPro()" disabled>Calculate Average</button>
+                        <button class="card__form-btn" onclick="deleteTodo1()" value="area1" type="button">Erase</button>
+                    </div>
+                </form>
+                <p id="salida1" class="card__salida"></p>
+            </div>
+            <div class="card background2">
+                <h2 class="card__title">Mean</h2>
+                <p class="card__subtitle">Enter the values to calculate the mean:</p>
+                <form class="card__form" action="javascript:void(0);" id="form2">
+                    <label class="card__form-label">
+                        <input class="input" type="number" id="area2">
+                        <button class="btn" title="Enter Number" type="button" id="btnI2" data-input="area2"  data-btn="btn2" data-salida="salida22"></button><button class="btn back2" title="Delete last number" type="button" id="btnB2" data-salida="salida22"></button>
+                    </label>
+                    <span>Entered Numbers:</span>
+                    <p class="card__salida salida--height" id="salida22"></p>
+                    <div class="botones">
+                        <button class="card__form-btn" id="btn2" type="button" onclick="calMe()" disabled>Calculate Median</button>
+                        <button class="card__form-btn" onclick="deleteTodo2()" value="area1" type="button">Erase</button>
+                    </div>
+                </form>
+                <p id="salida2" class="card__salida"></p>
+            </div>
+            <div class="card background3">
+                <h2 class="card__title">Median</h2>
+                <p class="card__subtitle">Enter the values to calculate the median:</p>
+                <form class="card__form" action="javascript:void(0);" id="form3">
+                    <label class="card__form-label">
+                        <input class="input" type="number" id="area3">
+                        <button class="btn" title="Enter number" type="button" id="btnI3" data-input="area3"  data-btn="btn3" data-salida="salida33"></button><button class="btn back2" title="Delete the last number" type="button" id="btnB3" data-salida="salida33"></button>
+                    </label>
+                    <span>Entered Numbers:</span>
+                    <p class="card__salida salida--height" id="salida33"></p>
+                    <div class="botones">
+                        <button class="card__form-btn" id="btn3" type="button" onclick="calMo()" disabled>Calculate Median</button>
+                        <button class="card__form-btn" onclick="deleteTodo3()" value="area1" type="button">Erase </button>
+                    </div>
+                </form>
+                <p id="salida3" class="card__salida"></p>
+            </div>
+        </div>
+    </main>
+    <footer class="footer-master">
+        <div class="footer-information index">
+            <ul>
+                <p class="footer-copyright">©2022 Matias López</p>
+            </ul>
+        </div>
+    </footer>
+    <script src="../JavaScript/Mediana.js" ></script>
+</body>
+</html>
