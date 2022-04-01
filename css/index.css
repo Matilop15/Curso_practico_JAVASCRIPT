@@ -98,10 +98,9 @@
   }
   
   .taller3 {
-    background-image: url("../Images/task2.png");
+    background-image: url("../Images/Task2.png");
   }
 
-  
   @media (max-width: 599px) {
     .Indexgrid {
       height: 60%;
