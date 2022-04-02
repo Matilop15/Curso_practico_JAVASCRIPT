@@ -41,8 +41,6 @@ const goNumber = (idArea, salidaP, idBtn, cadena) => {
         salida.innerText = `[${cadena}]`
         area.value = ""
         btn.disabled = false
-    } else {
-        alert("No")
     }
 }
 
@@ -72,9 +70,6 @@ const deleteNumber = (cadena, salidaP) => {
     if(cadena.length != 0){
         cadena.pop()
         salida.innerText = `[${cadena}]`
-    } else {
-        alert("No")
-        salida.innerText = ""
     }
 }
 
@@ -109,32 +104,20 @@ const calcularModa = (lista) => {
 // function from click btn from promenc
 const calPro = () => {
     if(array1.length != 0) {
-        salida1.innerText = `El Promedio de los valores ingresados es: ${calcularPromedio(array1)}`
-    } else {
-        alert('No')
-        salida1.innerText = ""
-        salida11.innerText = ""
+        salida1.innerText = `The average of the entered values is: ${calcularPromedio(array1)}`
     }
 } 
 // function from click btn from Media
 const calMe = () => {
     if(array2.length != 0) {
-        salida2.innerText = `La Media de los valores ingresados es: ${calcularMedia(array2)}`
-    } else {
-        alert('No')
-        salida2.innerText = ""
-        salida22.innerText = ""
+        salida2.innerText = `The mean of the entered values is: ${calcularMedia(array2)}`
     }
 } 
 
 // function from click btn from Moda
 const calMo = () => {
     if(array3.length != 0) {
-        salida3.innerText = `La Moda de los valores ingresados es: ${calcularModa(array3)}`
-    } else {
-        alert('No')
-        salida3.innerText = ""
-        salida33.innerText = ""
+        salida3.innerText = `The mode of the entered values is: ${calcularModa(array3)}`
     }
 } 
 // events from keword
