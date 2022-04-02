@@ -12,7 +12,6 @@
   }
   .Taller a:hover {
       color: black;
-      
   }
   .footer-master {
     background-color: #8ffcaa;
@@ -73,9 +72,12 @@
   .MyInfo ul {
       justify-content: center;
       list-style: none;
-      font: 700 1.5rem/1.6499999762rem Lato;
+      font: 900 1.5rem/1.6499999762rem Lato;
   }
-  .Taller a {
+  .MyInfo img:hover {
+    -webkit-transform: scale(1.25);
+  }
+  .fondo a {
     background-color: rgb(128, 125, 167);
     text-decoration: none;
     border-radius: 3px;
